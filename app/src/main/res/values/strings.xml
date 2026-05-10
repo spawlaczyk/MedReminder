@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MedReminder</string>
+    <string name="main_toolbar_title">Moje leki</string>
+    <string name="text_add">Dodaj lek</string>
+    <string name="med_name">Nazwa leku</string>
+    <string name="med_name_hint">Wpisz nazwę leku</string>
+    <string name="dos_name">Dawka</string>
+    <string name="dos_name_hint">Wpisz dawkę leku</string>
+    <string name="med_time">Godziny przyjęcia</string>
+    <string name="med_time_btn">Dodaj godzinę</string>
+    <string name="save_btn">ZAPISZ</string>
+    <string name="float_desc">Dodaj lek</string>
+    <string name="time_delete_hint">Usuń godzinę</string>
 </resources>
