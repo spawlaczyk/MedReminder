@@ -15,18 +15,18 @@ import pl.edu.uniwersytetkaliski.medreminder.db.Entity.Rejestr;
 
 @Database(entities = {Lek.class, Harmonogram.class, Rejestr.class}, version = 1)
 public abstract class BazaDanych extends RoomDatabase {
-    private static BazaDanych instancja;
+    private static BazaDanych instance;
 
     public static BazaDanych getInstance(Context context) {
-        if (instancja == null) {
-            instancja = Room.databaseBuilder(
+        if (instance == null) {
+            instance = Room.databaseBuilder(
                     context.getApplicationContext(),
                     BazaDanych.class,
                     "Baza_Danych"
             ).build();
         }
 
-        return instancja;
+        return instance;
     }
 
     public abstract LekDAO lekDAO();

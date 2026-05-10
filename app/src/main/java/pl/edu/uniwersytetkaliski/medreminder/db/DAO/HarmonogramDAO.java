@@ -11,7 +11,7 @@ import androidx.room.Query;
 @Dao
 public interface HarmonogramDAO {
     @Insert
-    int insert(Harmonogram harmonogram);
+    long insert(Harmonogram harmonogram);
 
     @Query("SELECT * FROM Harmonogram")
     List<Harmonogram> getAll();

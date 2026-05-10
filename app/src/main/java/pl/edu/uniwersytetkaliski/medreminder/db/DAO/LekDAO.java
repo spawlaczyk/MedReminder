@@ -11,7 +11,7 @@ import androidx.room.Query;
 @Dao
 public interface LekDAO {
     @Insert
-    int insert(Lek lek);
+    long insert(Lek lek);
 
     @Query("SELECT * FROM Leki")
     List<Lek> getAll();

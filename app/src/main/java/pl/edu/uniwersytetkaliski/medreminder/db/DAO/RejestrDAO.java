@@ -11,7 +11,7 @@ import java.util.List;
 @Dao
 public interface RejestrDAO {
     @Insert
-    int insert(Rejestr rejestr);
+    long insert(Rejestr rejestr);
 
     @Query("SELECT * FROM Rejestr WHERE idHarmonogramu = :idHarmonogramu")
     List<Rejestr> getByHarmonogramId(int idHarmonogramu);
